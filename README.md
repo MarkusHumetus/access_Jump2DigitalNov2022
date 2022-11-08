@@ -40,7 +40,7 @@ Files generated in the repository:
 - [Jupyter Noebook: main.ipynb](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/main.ipynb)
 
 - [predictions.csv](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/predictions.csv)
-- [requirements.txt](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/requirements.txt)
+- [requirements.txt]()
 
 # Initial Info
 
@@ -75,19 +75,16 @@ El dataset contiene 8 features en 8 columnas que son los parámetros medidos por
 Target: El target corresponde al 'label' que clasifica la calidad del aire.
 
 *Target 0* corresponde a una calidad del aire Buena
-Target 1 corresponde a una calidad del aire Moderada
-Target 2 corresponde a una calidad del aire Peligrosa
+*Target 1* corresponde a una calidad del aire Moderada
+*Target 2* corresponde a una calidad del aire Peligrosa
+
 Archivos:
 
-train.csv: Este dataset contiene tanto las variables predictoras como el tipo de clasificación de calidad del aire.
+[train.csv](https://nuwe.io/dev/challenges/jump2digital2022-data-science#:~:text=Variables%20del%20dataset%3A,ejemplo_predicciones.csv%27%20haz%20click%20aqu%C3%AD.): Este dataset contiene tanto las variables predictoras como el tipo de clasificación de calidad del aire.
 
-test.csv: Este dataset contiene las variables predictoras con las que se tendrá que predecir el tipo de calidad de aire.
+[test.csv](https://challenges-asset-files.s3.us-east-2.amazonaws.com/Events/Jump2digital+2022/test.csv): Este dataset contiene las variables predictoras con las que se tendrá que predecir el tipo de calidad de aire.
 
-Para descargar el dataset de 'rain.csv' haz click aquí.
-
-Para descargar el dataset de 'test.csv' haz click aquí.
-
-Para descargar el dataset de 'ejemplo_predicciones.csv' haz click aquí.
+Para descargar el dataset de 'ejemplo_predicciones.csv' haz click [aquí](https://challenges-asset-files.s3.us-east-2.amazonaws.com/data_sets/Data-Science/4+-+events/jump2digital/dataset/ejemplo_predicciones.csv).
 
 
 
