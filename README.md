@@ -1,6 +1,13 @@
-# access_Jump2DigitalNov2022
+# Access_Jump2DigitalNov2022
 Access Pojrect for the hackathon Jump2Digital, it will take place in Nov2022
 
+
+* background
+* problem
+* results
+* analysis
+* solution
+* license
 
 
 # Intro/Objectives: Project to access the Hackathon from JobTalent Hackathon on 17th October 2022
@@ -28,19 +35,25 @@ Project to get access to the Hackathon organised by 42Barcelona, Barcelona Activ
 
 # Getting Started
 
-1. Clone this [repo](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022) (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
-2. Use [requirements.txt](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/requirements.txt) to install all required dependencies. Please note that Pycaret 2.3.0 only works properly under Python 3.6-3.8
+1. Clone this [repo](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022).
+2. Use [requirements.txt](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/requirements.txt) to install all required dependencies. Please note that Pycaret 2.3.0 only works properly under Python 3.6-3.8
 
 # Project Status
 
 [Finished]
 
-Project was completed and submitted for competition in the 7th October  2022.
+Project was completed and submitted for competition in the 10th November 2022.
 Files generated in the repository:
-- [Jupyter Noebook: main.ipynb](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/main.ipynb)
 
-- [predictions.csv](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/predictions.csv)
-- [requirements.txt]()
+- Python code as [app.py](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/app.py)
+
+- [Jupyter Noebook: main.ipynb](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/main.ipynb)
+
+- [predictions.csv](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/predictions.csv)
+
+- [predictions.json]()
+
+- [requirements.txt](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/requirements.txt)
 
 # Initial Info
 
