@@ -82,4 +82,6 @@ x_pca_6 = pca_6_study.transform(x)
 #transform the test data set 
 test_pca_6 = pca_6_study.transform(polution_test)
 
+
+
 print (x_pca_6)
