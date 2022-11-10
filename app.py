@@ -83,5 +83,27 @@ x_pca_6 = pca_6_study.transform(x)
 test_pca_6 = pca_6_study.transform(polution_test)
 
 
+rf_best_model = RandomForestClassifier(bootstrap=True,
+                                          ccp_alpha=0.0,
+                                          class_weight=None,
+                                          criterion ='gini',
+                                          max_depth = 25,
+                                          max_features = 0.45,
+                                          max_leaf_nodes = None,
+                                          max_samples = None,
+                                          min_impurity_decrease = 0.0,
+                                          min_impurity_split = None,
+                                          min_samples_leaf = 1,
+                                          min_samples_split = 2,
+                                          min_weight_fraction_leaf = 0.0,
+                                          n_estimators = 572
+                                          )  
 
-print (x_pca_6)
+
+rf_best_model.fit(polution_train.drop('target', axis = 1), polution_train.target )
+
+x_test_pred = rf_best_model.predict(polution_test)
+
+predictions_df = pd.DataFrame(x_test_pred, columns=['final_status'])
+
+
