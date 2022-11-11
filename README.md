@@ -5,17 +5,6 @@
 Access Project for the hackathon Jump2Digital, it will take place in 25th of Novembre 2022. At the bottom of this readme you can find the [initial information](#Initial-Info) shared throuhg the Nuwe platform. [Train data set](https://nuwe.io/dev/challenges/jump2digital2022-data-science#:~:text=Variables%20del%20dataset%3A,ejemplo_predicciones.csv%27%20haz%20click%20aqu%C3%AD.) and [Test data set](https://challenges-asset-files.s3.us-east-2.amazonaws.com/Events/Jump2digital+2022/test.csv) without the target/label column are shared online.
 
 
-# Problem
-
-# Results
-
-# Analysis
-
-# Solution
-
-# License
-
-
 # Intro/Objectives: Project to access the Hackathon from JobTalent Hackathon on 17th October 2022
 
 Project to get access to the Hackathon organised by 42Barcelona, Barcelona Activa and Barcelona Digital Talent. At the botton of this readme you can find the [initial information](#Initial-Info) shared throuhg the Nuwe platform. [Train data set](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/initial_files/jm_train.csv) and [Test data set](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/initial_files/jm_X_test.csv) without the diagnosis/label column are in the [initial Docs folder](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/tree/main/initial_files) in this repository.
@@ -48,7 +37,7 @@ Project to get access to the Hackathon organised by 42Barcelona, Barcelona Activ
 
 [Finished]
 
-Project was completed and submitted for competition in the 10th November 2022.
+Project was completed and submitted for competition in the 11th November 2022.
 Files generated in the repository:
 
 - Python code as [app.py](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/app.py)
@@ -57,11 +46,11 @@ Files generated in the repository:
 
 - [predictions.csv](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/predictions.csv)
 
-- [predictions.json]()
+- [predictions.json](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/predictions.json)
 
 - [requirements.txt](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/requirements.txt)
 
-# Initial Info
+# Initial Info / Problem
 
 Jorge es un geólogo del IGME (Instituto Geológico y Minero de España) que está desarrollando un nuevo sistema de prevención de erupciones para poder predecir qué tipo de erupción tendrá un volcán según las las vibraciones detectadas por sus sensores durante los días previos a la erupción. Esto permitirá reducir el riesgo de víctimas y destrozos materiales por este tipo de catástrofe natural.
 El sistema de Jorge trabaja con 5 tipos de erupciones:
@@ -115,16 +104,52 @@ Revisar que la rama principal de entrega del repositorio es main.
 
 El código se deberá de entregar en un fichero py llamado [app.py](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/app.py). Este tendrá todas las funciones utilizadas y el código necesario junto documentación para reproducir vuestra solución. Para los gráficos os recomendamos entregarlo en un [ipynb](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/main.ipynb).
 
-Para que cuente documentación tiene que tener un README.md con la siguiente estructura y lo siguientes títulos:
 
-* background
-* problem
-* results
-* analysis
-* solution
-* license
 
-Para PUNTUAR las PREDICCIONES el repositorio entregado tiene que tener un archivo [predictions.json](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/predictions.json) con este [formato](https://github.com/nuwe-io/data-analyser-test-repo/blob/main/predictions.json).
+# Results & Conclusions
+
+* No improvements observed from different scalling modification for the initial dataset (Mix-max, Standard and Robust scalers).
+* Dimension reduction of features didn't improve the classification performance of Rain forest model (PCA study to 5, 6 or 7 components).
+* Maximum f1 score macro observed in the tunning process was 0.919.
+* According to Pycaret screening with reduction of component analysis to 6 components, Extra Trees Classifier could perform better than RainForset Classifier/RFC. However, initial requirement was to use RFC and no additional trials were done.
+
+# Analysis
+Initial dataset has balanced classes and distributions can The predictions are quite accured with good metrics.
+
+# Solution
+Solution include the following files:
+
+- Python code as [app.py](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/app.py)
+
+- Jupyter Noebook as [main.ipynb](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/main.ipynb)
+
+- [predictions.csv](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/predictions.csv)
+
+- [predictions.json](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/predictions.json)
+
+- [requirements.txt](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/requirements.txt) in case environment of work is needed.
+
+# License
+
+Copyright (c) **[2022] Marc Humet Montada**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 # Contact
 
