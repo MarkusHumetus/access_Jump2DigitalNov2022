@@ -1,15 +1,12 @@
-# Access_Jump2DigitalNov2022
-
 
 # Background
-Access Project for the hackathon Jump2Digital, it will take place in 25th of Novembre 2022. At the bottom of this readme you can find the [initial information](#Initial-Info) shared throuhg the Nuwe platform. [Train data set](https://nuwe.io/dev/challenges/jump2digital2022-data-science#:~:text=Variables%20del%20dataset%3A,ejemplo_predicciones.csv%27%20haz%20click%20aqu%C3%AD.) and [Test data set](https://challenges-asset-files.s3.us-east-2.amazonaws.com/Events/Jump2digital+2022/test.csv) without the target/label column are shared online.
-
-
-# Intro/Objectives: Project to access the Hackathon from JobTalent Hackathon on 17th October 2022
-
-Project to get access to the Hackathon organised by 42Barcelona, Barcelona Activa and Barcelona Digital Talent. At the botton of this readme you can find the [initial information](#Initial-Info) shared throuhg the Nuwe platform. [Train data set](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/initial_files/jm_train.csv) and [Test data set](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/blob/main/initial_files/jm_X_test.csv) without the diagnosis/label column are in the [initial Docs folder](https://github.com/MarkusHumetus/Access_Job_Talent_Oct_2022/tree/main/initial_files) in this repository.
-
+Access Project for the hackathon Jump2Digital, it will take place in 25th of Novembre 2022. At the bottom of this readme you can find the [initial information](#Initial-Info-/-Problem) shared throuhg the Nuwe platform. [Train data set](https://nuwe.io/dev/challenges/jump2digital2022-data-science#:~:text=Variables%20del%20dataset%3A,ejemplo_predicciones.csv%27%20haz%20click%20aqu%C3%AD.) and [Test data set](https://challenges-asset-files.s3.us-east-2.amazonaws.com/Events/Jump2digital+2022/test.csv) without the target/label column are shared online.
     
+# Getting Started
+
+1. Clone this [repo](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022).
+2. Use [requirements.txt](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/requirements.txt) to install all required dependencies. Please note that Pycaret 2.3.0 only works properly under Python 3.6-3.8
+
 # Methodology
 
 0. Load libraries and data.
@@ -27,11 +24,6 @@ Project to get access to the Hackathon organised by 42Barcelona, Barcelona Activ
 * Jupyter Notebook
 * Visual Studio Code
 * Libraries: Pandas, Numpy, Sweetviz, Seaborn, Matplotlib, Sklearn, Pycaret, Optuna. 
-
-# Getting Started
-
-1. Clone this [repo](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022).
-2. Use [requirements.txt](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/requirements.txt) to install all required dependencies. Please note that Pycaret 2.3.0 only works properly under Python 3.6-3.8
 
 # Project Status
 
@@ -104,20 +96,18 @@ Revisar que la rama principal de entrega del repositorio es main.
 
 El código se deberá de entregar en un fichero py llamado [app.py](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/app.py). Este tendrá todas las funciones utilizadas y el código necesario junto documentación para reproducir vuestra solución. Para los gráficos os recomendamos entregarlo en un [ipynb](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/main.ipynb).
 
-
-
 # Results & Conclusions
 
 * No improvements observed from different scalling modification for the initial dataset (Mix-max, Standard and Robust scalers).
 * Dimension reduction of features didn't improve the classification performance of Rain forest model (PCA study to 5, 6 or 7 components).
-* Maximum f1 score macro observed in the tunning process was 0.919.
+* **Maximum f1 score macro** observed in the tunning process was **0.919**.
 * According to Pycaret screening with reduction of component analysis to 6 components, Extra Trees Classifier could perform better than RainForset Classifier/RFC. However, initial requirement was to use RFC and no additional trials were done.
 
 # Analysis
-Initial dataset has balanced classes and distributions can The predictions are quite accured with good metrics.
+Initial dataset has balanced classes and distributions can The predictions are quite accured with good metrics.be considered gaussian. There are several features with a high correlation.
 
 # Solution
-Solution include the following files:
+Solution includes the following files:
 
 - Python code as [app.py](https://github.com/MarkusHumetus/access_Jump2DigitalNov2022/blob/main/app.py)
 
