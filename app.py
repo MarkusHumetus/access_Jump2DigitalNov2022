@@ -71,17 +71,9 @@ x.drop('target',axis=1, inplace =True)
 
 y=polution_train.target
 
-pca_6_study = PCA(n_components=6)
-pca_6_study.fit(x)
-x_pca_6 = pca_6_study.transform(x)
-
-#fit the random forest with the transformed data
 
 
-
-#transform the test data set 
-test_pca_6 = pca_6_study.transform(polution_test)
-
+#Random forest with the best tunned hyperparameters (see Jupyter Notebook) 
 
 rf_best_model = RandomForestClassifier(bootstrap=True,
                                           ccp_alpha=0.0,
@@ -92,7 +84,6 @@ rf_best_model = RandomForestClassifier(bootstrap=True,
                                           max_leaf_nodes = None,
                                           max_samples = None,
                                           min_impurity_decrease = 0.0,
-                                          min_impurity_split = None,
                                           min_samples_leaf = 1,
                                           min_samples_split = 2,
                                           min_weight_fraction_leaf = 0.0,
@@ -100,10 +91,12 @@ rf_best_model = RandomForestClassifier(bootstrap=True,
                                           )  
 
 
-rf_best_model.fit(polution_train.drop('target', axis = 1), polution_train.target )
+rf_best_model.fit(x,y)
 
 x_test_pred = rf_best_model.predict(polution_test)
 
 predictions_df = pd.DataFrame(x_test_pred, columns=['final_status'])
 
+predictions_df.to_csv('predictions.csv',index=False) #saving predictions to a csv eda_37file
 
+predictions_df.to_json('predictions.json') #saving predictions to a json file
