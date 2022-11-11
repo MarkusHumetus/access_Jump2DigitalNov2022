@@ -1,13 +1,19 @@
 # Access_Jump2DigitalNov2022
-Access Pojrect for the hackathon Jump2Digital, it will take place in Nov2022
 
 
-* background
-* problem
-* results
-* analysis
-* solution
-* license
+# Background
+Access Project for the hackathon Jump2Digital, it will take place in 25th of Novembre 2022. At the bottom of this readme you can find the [initial information](#Initial-Info) shared throuhg the Nuwe platform. [Train data set](https://nuwe.io/dev/challenges/jump2digital2022-data-science#:~:text=Variables%20del%20dataset%3A,ejemplo_predicciones.csv%27%20haz%20click%20aqu%C3%AD.) and [Test data set](https://challenges-asset-files.s3.us-east-2.amazonaws.com/Events/Jump2digital+2022/test.csv) without the target/label column are shared online.
+
+
+# Problem
+
+# Results
+
+# Analysis
+
+# Solution
+
+# License
 
 
 # Intro/Objectives: Project to access the Hackathon from JobTalent Hackathon on 17th October 2022
